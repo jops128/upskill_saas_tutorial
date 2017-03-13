@@ -37,6 +37,11 @@ h1, h2, h3 {
   border: none;
 }
 
+.navbar-brand {
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 700;
+}
+
 // Home page styles
 .navbar-default .navbar-brand,
 .navbar-collapse .navbar-nav > li > a {
