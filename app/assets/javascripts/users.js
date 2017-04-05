@@ -3,6 +3,7 @@
 $(document).on('turbolinks:load', function(){
   var theForm = $('#pro_form');
   var submitBtn = $('#form-signup-btn');
+  
   //Set Stripe public key.
   Stripe.setPublishableKey( $('meta[name:"stripe-key"]').attr('content') )
   
@@ -11,7 +12,7 @@ $(document).on('turbolinks:load', function(){
   submitBtn.click(function(event){
     //prevent default submission behavior.
     event.preventDefault();
-    submitBtn.val("Proccesing").prop('disabled', true);
+    submitBtn.val("Processing").prop('disabled', true);
     
     //Collect credit card fields.
     var ccNum = $('#card_number').val(),
