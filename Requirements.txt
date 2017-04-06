@@ -13,3 +13,10 @@ should validate the user fields. Rails app will note whether plan 1 or plan 2.
 * Once validated Rails should send user info (email, plan id) and card token
 to stripe server and stripe will create a subscription and send back customer
 token. Rails should save customer token and user info to our database
+
+User profiles
+* Each user should have one profile.
+* User should see a link to the new profile form upon signing up.
+* The User should be able to create and view their user profile.
+* User profile should have a profile picture.
+* Users should be able to view all user profiles.
